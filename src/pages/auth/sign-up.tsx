@@ -27,7 +27,6 @@ export function SingUp() {
   } = useForm<SingUpForm>()
 
   async function handleSingUp(data: SingUpForm) {
-    console.log(data)
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000))
       toast.success('Restaurante cadastrado com sucesso!', {
